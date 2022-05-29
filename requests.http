@@ -1,0 +1,12 @@
+@local_base_url=http://localhost:3001
+
+########### DOCKER COMPOSE ###########
+
+### Healthcheck
+GET  {{local_base_url}}/health
+
+### GraphQL query request
+POST {{local_base_url}}/graphql
+Content-Type: application/json
+
+{"query":"query {\n users {\n id,\n role,}\n}","variables":{}}

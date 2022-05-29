@@ -1,0 +1,9 @@
+projects:
+  graph:
+    schema: src/schema.gql
+    extensions:
+      languageService:
+      cacheSchemaFileForLookup: false
+      endpoints:
+        default:
+          url: http://localhost:3001/graphql
