@@ -66,7 +66,6 @@
     "serverless-plugin-typescript": "^2.1.1",
     "serverless-plugin-warmup": "^7.1.0",
     "serverless-plugin-warmup-ts-bridge-v2": "^0.1.8",
-    "serverless-ssm-fetch": "^2.0.0",
     "source-map-support": "^0.5.20",
     "supertest": "6.2.2",
     "ts-jest": "27.1.3",

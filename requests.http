@@ -1,4 +1,5 @@
 @local_base_url=http://localhost:3001
+@dev_aws_url=<DEV_API_URL>
 
 ########### DOCKER COMPOSE ###########
 
@@ -10,3 +11,8 @@ POST {{local_base_url}}/graphql
 Content-Type: application/json
 
 {"query":"query {\n users {\n id,\n role,}\n}","variables":{}}
+
+########### DOCKER COMPOSE ###########
+
+GET {{dev_aws_url}}/health
+Content-Type: application/json

@@ -2326,7 +2326,7 @@ aws-lambda@^1.0.7:
     js-yaml "^3.14.1"
     watchpack "^2.0.0-beta.10"
 
-aws-sdk@^2.1046.0, aws-sdk@^2.1136.0, aws-sdk@^2.1140.0, aws-sdk@^2.814.0:
+aws-sdk@^2.1136.0, aws-sdk@^2.1140.0, aws-sdk@^2.814.0:
   version "2.1145.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1145.0.tgz#9da2e0abb5aed130b0fb33d0452cc468b22d2465"
   integrity sha512-bjZJGFxHJadnp2kbg1etKw7ID1QmmKk1ivML0Xtt6S6GnGSfX8zVuLMkJZaxPMjlyZ6xeilGwzk2F9igxBCPCQ==
@@ -6980,14 +6980,6 @@ serverless-plugin-warmup@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/serverless-plugin-warmup/-/serverless-plugin-warmup-7.1.0.tgz#884acdc9fe4c5822132adf68a73a5c8ef62e77e9"
   integrity sha512-p2+fIChOnBXkuw3+uyqk7ZNGRj9ymVXTgYYqyxqSJX1tYXBF7QdcKbMUMqU2SDdccFLTRUSejIq7OfRsqe/jdw==
-
-serverless-ssm-fetch@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/serverless-ssm-fetch/-/serverless-ssm-fetch-2.0.0.tgz#e7ed9f65cb283419b0d3072811576f9357faa544"
-  integrity sha512-GnBU+zZ3ZnB96+FgPH36tf3HODKRSGGaksx9mkEhsgP1JfVUmxwtRsZoCjdYy0VDm34ZnXxq3VcdCWy3+9HmxQ==
-  dependencies:
-    aws-sdk "^2.1046.0"
-    bluebird "^3.7.2"
 
 serverless@^3.18.2:
   version "3.18.2"
