@@ -19,6 +19,8 @@ custom:
       prewarm: true # Run WarmUp immediately after a deployment
       timeout: 16 # One second longer than main lambda timeout
       vpc: false # ensure WarmUp lambda isn't launched in a VPC
+  serverless-offline:
+    httpPort: 3001
 
 provider:
   name: aws

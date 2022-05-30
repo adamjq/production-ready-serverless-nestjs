@@ -12,7 +12,12 @@ Content-Type: application/json
 
 {"query":"query {\n users {\n id,\n role,}\n}","variables":{}}
 
-########### DOCKER COMPOSE ###########
+########### SERVERLESS OFFLINE ###########
+
+### Healthcheck
+GET {{local_base_url}}/dev/health
+
+########### AWS ###########
 
 GET {{dev_aws_url}}/health
 Content-Type: application/json

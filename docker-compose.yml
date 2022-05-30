@@ -11,3 +11,14 @@ services:
       - 9229:9229
     volumes:
       - .:/app
+  
+  # runs 'sls offline' in Docker
+  slsoffline:
+    build:
+      context: .
+      dockerfile: Dockerfile.slsoffline
+    ports:
+      - 3001:3001
+      - 3002:3002
+    volumes:
+      - .:/app

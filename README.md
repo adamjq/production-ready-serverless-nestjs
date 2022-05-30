@@ -11,9 +11,18 @@
 
 ## Development
 
+Launch the dev server in Docker:
 ```
 yarn install
-docker-compose up
+docker-compose up app
+```
+
+## Serverless Offline
+
+Launches a local API Gateway server in a docker network. This is useful for connecting to other services in Docker, like a database. This option also tests Lambda packaging.
+
+```
+docker-compose up slsoffline
 ```
 
 ## Deployment
