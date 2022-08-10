@@ -9,10 +9,16 @@
 ### Not included
 - Database config
 
+## Dependencies
+
+- Node
+- NVM `brew install nvm`
+
 ## Development
 
 Launch the dev server in Docker:
 ```
+nvm use 16
 yarn install
 docker-compose up app
 ```
