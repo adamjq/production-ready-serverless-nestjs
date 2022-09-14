@@ -50,7 +50,7 @@
     "@nestjs/cli": "9.0.0",
     "@nestjs/schematics": "9.0.1",
     "@nestjs/testing": "9.0.8",
-    "@types/aws-lambda": "8.10.97",
+    "@types/aws-lambda": "8.10.104",
     "@types/express": "4.17.13",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.36",
