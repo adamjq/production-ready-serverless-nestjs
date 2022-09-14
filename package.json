@@ -60,7 +60,7 @@
     "eslint": "8.8.0",
     "eslint-config-prettier": "8.3.0",
     "jest": "27.5.1",
-    "prettier": "2.5.1",
+    "prettier": "2.7.1",
     "serverless": "3.18.2",
     "serverless-offline": "8.8.0",
     "serverless-plugin-typescript": "2.1.2",
