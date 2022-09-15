@@ -61,7 +61,7 @@
     "eslint-config-prettier": "8.5.0",
     "jest": "27.5.1",
     "prettier": "2.7.1",
-    "serverless": "3.18.2",
+    "serverless": "3.22.0",
     "serverless-offline": "8.8.1",
     "serverless-plugin-typescript": "2.1.2",
     "serverless-plugin-warmup": "7.1.0",
