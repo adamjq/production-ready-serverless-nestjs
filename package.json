@@ -64,7 +64,7 @@
     "serverless": "3.22.0",
     "serverless-offline": "8.8.1",
     "serverless-plugin-typescript": "2.1.2",
-    "serverless-plugin-warmup": "7.1.0",
+    "serverless-plugin-warmup": "7.3.0",
     "serverless-plugin-warmup-ts-bridge-v2": "0.1.8",
     "source-map-support": "0.5.21",
     "supertest": "6.2.4",

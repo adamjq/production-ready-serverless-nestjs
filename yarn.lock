@@ -7065,10 +7065,10 @@ serverless-plugin-warmup-ts-bridge-v2@0.1.8:
   resolved "https://registry.yarnpkg.com/serverless-plugin-warmup-ts-bridge-v2/-/serverless-plugin-warmup-ts-bridge-v2-0.1.8.tgz#2f9b9e26933e521e1d068da60e8d210cb50f850c"
   integrity sha512-mKD6nmuazlvskzUgvtsYCmn9Zyk3xoQ9nvF1nJCLgUZYUgUMPOwGybhxcQ5pwbIBh89awyzjAhXwjVTItF7jZg==
 
-serverless-plugin-warmup@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/serverless-plugin-warmup/-/serverless-plugin-warmup-7.1.0.tgz#884acdc9fe4c5822132adf68a73a5c8ef62e77e9"
-  integrity sha512-p2+fIChOnBXkuw3+uyqk7ZNGRj9ymVXTgYYqyxqSJX1tYXBF7QdcKbMUMqU2SDdccFLTRUSejIq7OfRsqe/jdw==
+serverless-plugin-warmup@7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/serverless-plugin-warmup/-/serverless-plugin-warmup-7.3.0.tgz#e168e8bfa133b1c8e586d66dbc858b44720e7f24"
+  integrity sha512-Me4IqkbMLO2aLmis/gMlSWYAGu235soKJThktD0w3/6QgGYHJSRliqv4lM9A3bV2iNyv/M9rTnUdqpCM9TfdtQ==
 
 serverless@3.22.0:
   version "3.22.0"
