@@ -2724,10 +2724,10 @@ aws-sdk@^2.1195.0:
     uuid "8.0.0"
     xml2js "0.4.19"
 
-aws-sdk@^2.1215.0:
-  version "2.1221.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1221.0.tgz#36dd12d7af4b46495a92d77a0fc3be2f8903f252"
-  integrity sha512-RKFnhC5RW70xRFixzdvZ50YnNT2DdNh1CoXWBEmPOVEXDEv5ztTmAsgju2vfPQZLkKuMzL8LCBdT3xrr8JdoDg==
+aws-sdk@^2.1222.0:
+  version "2.1222.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1222.0.tgz#e23d5a519370c4f03cc763d15c089722b1b2d137"
+  integrity sha512-gXxrBQOKtpovWcv12MovrK5KtDT73zhYmdvx+4ksJRUYrYYrMZcs/thZ1kB99UHKwzTH63gYFL3Kev3FgJx1XA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -7261,16 +7261,16 @@ serve-static@1.15.0:
     parseurl "~1.3.3"
     send "0.18.0"
 
-serverless-offline@10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-10.1.0.tgz#91e5e0ef485b4835d9343e8b7de3f32fff49c78f"
-  integrity sha512-wNfN+z2y7j08OSNw6U6ymxa3/mYctfotC8M5OAtTnaYuQcISccDzbQFYk9KgqJjI98rIng8Z+MWZKsvtb+Zg/Q==
+serverless-offline@10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-10.2.0.tgz#4c9b390fef4e7a9320fe545e711203dcf5eb87b9"
+  integrity sha512-Ypy7M4BxhcGxTlHgvyWgHX/zruzsicr6th/wga816jeMW9xV6oxJQcrs/7F66hnjYwXRYON6oq0AA4rrCc9hdQ==
   dependencies:
     "@hapi/boom" "^10.0.0"
     "@hapi/h2o2" "^9.1.0"
     "@hapi/hapi" "^20.2.2"
     "@serverless/utils" "^6.7.0"
-    aws-sdk "^2.1215.0"
+    aws-sdk "^2.1222.0"
     boxen "^7.0.0"
     chalk "^5.0.1"
     execa "^6.1.0"
@@ -7288,7 +7288,7 @@ serverless-offline@10.1.0:
     p-memoize "^7.1.0"
     p-retry "^5.1.1"
     velocityjs "^2.0.6"
-    ws "^8.8.1"
+    ws "^8.9.0"
 
 serverless-plugin-typescript@2.1.2:
   version "2.1.2"
@@ -8453,7 +8453,7 @@ write-file-atomic@^4.0.1:
     imurmurhash "^0.1.4"
     signal-exit "^3.0.7"
 
-ws@8.8.1, ws@^8.8.1:
+ws@8.8.1:
   version "8.8.1"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/ws/-/ws-8.8.1.tgz#5dbad0feb7ade8ecc99b830c1d77c913d4955ff0"
   integrity sha512-bGy2JzvzkPowEJV++hF07hAD6niYSr0JzBNo/J29WsB57A2r7Wlc1UFcTR9IzrPvuNVO4B8LGqF8qcpsVOhJCA==
@@ -8462,6 +8462,11 @@ ws@8.8.1, ws@^8.8.1:
   version "7.5.8"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.8.tgz#ac2729881ab9e7cbaf8787fe3469a48c5c7f636a"
   integrity sha512-ri1Id1WinAX5Jqn9HejiGb8crfRio0Qgu8+MtL36rlTA6RLsMdWt1Az/19A2Qij6uSHUMphEFaTKa4WG+UNHNw==
+
+ws@^8.9.0:
+  version "8.9.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.9.0.tgz#2a994bb67144be1b53fe2d23c53c028adeb7f45e"
+  integrity sha512-Ja7nszREasGaYUYCI2k4lCKIRTt+y7XuqVoHR44YpI49TtryyqbqvDMn5eqfW7e6HzTukDRIsXqzVHScqRcafg==
 
 xml2js@0.4.19:
   version "0.4.19"
