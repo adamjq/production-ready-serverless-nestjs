@@ -2772,10 +2772,10 @@ aws-sdk@^2.1195.0:
     uuid "8.0.0"
     xml2js "0.4.19"
 
-aws-sdk@^2.1224.0:
-  version "2.1224.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1224.0.tgz#53ecfec8b55009cdc7130715daed645057fbfc94"
-  integrity sha512-hhEA9laF4C+KwwLxBFT1X3m8WSniKgCXsarZXiNJGzKjovbIGIGlsmK+FgAxI2mXIEqkQUrx5XAgiGML8LiexQ==
+aws-sdk@^2.1225.0:
+  version "2.1225.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1225.0.tgz#5747cd1842f461300fb1b8d034c7ef1ae14185a1"
+  integrity sha512-JYYYVpr4EktsohOrO8+KfhmHGt2x2zi20Ypkrtllhrh6fhtosduqpH5cQF7wYX/zEvjqduv0dHYd3sXCROHP8A==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5800,10 +5800,10 @@ jmespath@0.16.0:
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.16.0.tgz#b15b0a85dfd4d930d43e69ed605943c802785076"
   integrity sha512-9FzQjJ7MATs1tSpnco1K6ayiYE3figslrXA72G2HQ/n76RzvYlofyi5QM+iX4YRs/pu3yzxlVQSST23+dMDknw==
 
-jose@^4.9.3:
-  version "4.9.3"
-  resolved "https://registry.yarnpkg.com/jose/-/jose-4.9.3.tgz#890abd3f26725fe0f2aa720bc2f7835702b624db"
-  integrity sha512-f8E/z+T3Q0kA9txzH2DKvH/ds2uggcw0m3vVPSB9HrSkrQ7mojjifvS7aR8cw+lQl2Fcmx9npwaHpM/M3GD8UQ==
+jose@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/jose/-/jose-4.10.0.tgz#2e0b7bcc80dd0775f8a4588e55beb9460c37d60a"
+  integrity sha512-KEhB/eLGLomWGPTb+/RNbYsTjIyx03JmbqAyIyiXBuNSa7CmNrJd5ysFhblayzs/e/vbOPMUaLnjHUMhGp4yLw==
 
 js-sdsl@^4.1.4:
   version "4.1.4"
@@ -7307,22 +7307,22 @@ serve-static@1.15.0:
     parseurl "~1.3.3"
     send "0.18.0"
 
-serverless-offline@10.3.2:
-  version "10.3.2"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-10.3.2.tgz#648e5bd632935a2668c701a5cded356954c575c4"
-  integrity sha512-J6MYWhBJw6uNXhrouzW2kf8mPeMxVgCoBZvDdx5t0CGJYGr5l971ezQNWWAnzDHenn9qtRD7hpsu3Zp97N6wjA==
+serverless-offline@11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-11.0.0.tgz#b935e5dfb362c9c564c275f05dc2dbc5dd72fdbd"
+  integrity sha512-/JQkxfD2sLkS4keNyhUs6tzH6HNVKoVSgkz/CcpKIQwd09/pR0tjsMRCkMDkxYYqJSNl5OoBzvOf1KWm66GgEQ==
   dependencies:
     "@hapi/boom" "^10.0.0"
     "@hapi/h2o2" "^10.0.0"
     "@hapi/hapi" "^20.2.2"
     "@serverless/utils" "^6.7.0"
-    aws-sdk "^2.1224.0"
+    aws-sdk "^2.1225.0"
     boxen "^7.0.0"
     chalk "^5.0.1"
     execa "^6.1.0"
     fs-extra "^10.1.0"
     java-invoke-local "0.0.6"
-    jose "^4.9.3"
+    jose "^4.10.0"
     js-string-escape "^1.0.1"
     jsonpath-plus "^7.2.0"
     jsonschema "^1.4.1"
