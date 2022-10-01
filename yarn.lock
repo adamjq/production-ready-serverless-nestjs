@@ -7308,10 +7308,10 @@ serve-static@1.15.0:
     parseurl "~1.3.3"
     send "0.18.0"
 
-serverless-offline@11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-11.0.0.tgz#b935e5dfb362c9c564c275f05dc2dbc5dd72fdbd"
-  integrity sha512-/JQkxfD2sLkS4keNyhUs6tzH6HNVKoVSgkz/CcpKIQwd09/pR0tjsMRCkMDkxYYqJSNl5OoBzvOf1KWm66GgEQ==
+serverless-offline@11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-11.0.1.tgz#bd63060b8d1ba1f921a20e8ab18ca5d5d8ea5eec"
+  integrity sha512-gnhV7pR07uneRvPH523U5C/lPLjji30grFd12d0FrMwNYYzpS8c8O7X2gupWUArlznFSKkO5KAXfv1PXqxK+Zw==
   dependencies:
     "@hapi/boom" "^10.0.0"
     "@hapi/h2o2" "^10.0.0"
