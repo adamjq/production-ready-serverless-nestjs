@@ -3,7 +3,7 @@
 ## Features
 - GraphQL configuration (Code-first approach)
 - Prisma Database config with migrations
-- Dockerized database for local development
+- Docker database for local development
 - AWS Deployment with [Serverless Framework](https://www.serverless.com/)
 - AWS Lambda NodeJS 16x configuration and optimizations
 
@@ -31,7 +31,7 @@ hosted service. CockroachDB can easily be replace with a regular PostgreSQL data
 
 2. Launch the CockroachDB database with Docker with `docker-compose up`
 
-3. Install depenencies with:
+3. Install dependencies with:
     ```
     nvm use 16
     yarn install
@@ -49,7 +49,7 @@ hosted service. CockroachDB can easily be replace with a regular PostgreSQL data
 
 ### AWS Deployment
 
-**Note** - create all AWS and CockroachDB resoures in the `us-east-1` AWS region.
+**Note** - create all AWS and CockroachDB resources in the `us-east-1` AWS region.
 
 1. Setup your AWS Credentials for deployments
 
