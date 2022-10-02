@@ -2,23 +2,19 @@ service: Production-Ready-Serverless-NestJS
 frameworkVersion: '>=3'
 
 plugins:
-  - serverless-plugin-warmup-ts-bridge-v2 # this needs to go before the warmup plugin
-  - serverless-plugin-warmup # this needs to go before the typescript plugin
   - serverless-plugin-typescript
+  - serverless-ssm-fetch
   - serverless-offline
 
 package:
+  individually: true
   patterns:
     - "**/*.gql"
     - '!dist/**'
 
 custom:
-  warmup:
-    default:
-      enabled: true
-      prewarm: true # Run WarmUp immediately after a deployment
-      timeout: 16 # One second longer than main lambda timeout
-      vpc: false # ensure WarmUp lambda isn't launched in a VPC
+  serverlessSsmFetch:
+    DATABASE_URL: '/dev/database/url~true'
   serverless-offline:
     httpPort: 3001
 
@@ -29,11 +25,6 @@ provider:
   timeout: 15
   region: us-east-1
   logRetentionInDays: 14
-  # vpc:
-  #   securityGroupIds:
-  #     - 
-  #   subnetIds:
-  #     - 
 
 functions:
   main:
@@ -47,3 +38,10 @@ functions:
       - http:
           method: ANY
           path: '{proxy+}'
+    package:
+      # see https://github.com/serverless/serverless-plugin-typescript/issues/170#issuecomment-1132731263
+      patterns:
+        - '!node_modules/.prisma/client/libquery_engine-*'
+        - 'node_modules/.prisma/client/libquery_engine-rhel-*'
+        - '!node_modules/prisma/libquery_engine-*'
+        - '!node_modules/@prisma/engines/**'

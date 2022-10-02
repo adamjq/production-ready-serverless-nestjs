@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+   binaryTargets = ["native", "linux-musl", "rhel-openssl-1.0.x"]
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id      BigInt   @id @default(autoincrement())
+  email   String   @unique
+  role    String   
+}

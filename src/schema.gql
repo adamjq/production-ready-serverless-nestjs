@@ -6,17 +6,10 @@ type Query {
   users: [User!]!
 }
 
-"""
-`Date` type as integer. Type represents date and time as number of milliseconds from start of UNIX epoch.
-"""
-scalar Timestamp
-
 type User {
-  createdAt: Timestamp!
   email: String!
   id: Int!
   role: UserRole!
-  updatedAt: Timestamp!
 }
 
 enum UserRole {
