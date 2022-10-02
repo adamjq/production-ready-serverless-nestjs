@@ -9,20 +9,14 @@ export enum UserRole {
 
 @ObjectType()
 export class User {
-  @Field((type) => Int)
+  @Field(() => Int)
   id: number;
-
-  @Field((type) => Date)
-  createdAt: Date;
-
-  @Field((type) => Date)
-  updatedAt: Date;
 
   @Field()
   @MinLength(3)
   email: string;
 
-  @Field((type) => UserRole)
+  @Field(() => UserRole)
   role: UserRole;
 }
 

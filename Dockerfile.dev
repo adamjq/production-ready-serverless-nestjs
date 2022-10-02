@@ -1,7 +1,0 @@
-FROM amd64/node:16-alpine AS builder
-WORKDIR /app
-COPY package.json ./
-COPY yarn.lock ./
-RUN yarn install
-COPY . .
-CMD [ "yarn", "start:dev"]

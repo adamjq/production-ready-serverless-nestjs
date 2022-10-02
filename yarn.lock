@@ -1616,6 +1616,23 @@
     consola "^2.15.0"
     node-fetch "^2.6.1"
 
+"@prisma/client@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-4.4.0.tgz#45f59c172dd3621ecc92d7cf9bc765d85e6c7d56"
+  integrity sha512-ciKOP246x1xwr04G9ajHlJ4pkmtu9Q6esVyqVBO0QJihaKQIUvbPjClp17IsRJyxqNpFm4ScbOc/s9DUzKHINQ==
+  dependencies:
+    "@prisma/engines-version" "4.4.0-66.f352a33b70356f46311da8b00d83386dd9f145d6"
+
+"@prisma/engines-version@4.4.0-66.f352a33b70356f46311da8b00d83386dd9f145d6":
+  version "4.4.0-66.f352a33b70356f46311da8b00d83386dd9f145d6"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-4.4.0-66.f352a33b70356f46311da8b00d83386dd9f145d6.tgz#00875863bb30b670a586a5b5794a000f7f3ad976"
+  integrity sha512-P5v/PuEIJLYXZUZBvOLPqoyCW+m6StNqHdiR6te++gYVODpPdLakks5HVx3JaZIY+LwR02juJWFlwpc9Eog/ug==
+
+"@prisma/engines@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-4.4.0.tgz#6ca7d3ce8eee08dcfa82311b0a02f5ccaac7dc0c"
+  integrity sha512-Fpykccxlt9MHrAs/QpPGpI2nOiRxuLA+LiApgA59ibbf24YICZIMWd3SI2YD+q0IAIso0jCGiHhirAIbxK3RyQ==
+
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
@@ -2755,6 +2772,22 @@ aws-lambda@1.0.7:
     commander "^3.0.2"
     js-yaml "^3.14.1"
     watchpack "^2.0.0-beta.10"
+
+aws-sdk@^2.1046.0:
+  version "2.1227.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1227.0.tgz#2ef47b77aa104f07bf5b233c06adf51f166cd390"
+  integrity sha512-L6vnopVXVXKEqi0R4i54F6xSemczd/aRy4UscqnfpyvNYr9yLL3jVApFo7OX8hxompe/tgxdQFXvMiNzhkSrwQ==
+  dependencies:
+    buffer "4.9.2"
+    events "1.1.1"
+    ieee754 "1.1.13"
+    jmespath "0.16.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    util "^0.12.4"
+    uuid "8.0.0"
+    xml2js "0.4.19"
 
 aws-sdk@^2.1195.0:
   version "2.1216.0"
@@ -6900,6 +6933,13 @@ pretty-format@^29.1.2:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
+prisma@4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-4.4.0.tgz#0c53324bf6a29474636b3e1964e0d72e0277bf8f"
+  integrity sha512-l/QKLmLcKJQFuc+X02LyICo0NWTUVaNNZ00jKJBqwDyhwMAhboD1FWwYV50rkH4Wls0RviAJSFzkC2ZrfawpfA==
+  dependencies:
+    "@prisma/engines" "4.4.0"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -7346,15 +7386,13 @@ serverless-plugin-typescript@2.1.2:
     globby "^10.0.2"
     lodash "^4.17.21"
 
-serverless-plugin-warmup-ts-bridge-v2@0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/serverless-plugin-warmup-ts-bridge-v2/-/serverless-plugin-warmup-ts-bridge-v2-0.1.8.tgz#2f9b9e26933e521e1d068da60e8d210cb50f850c"
-  integrity sha512-mKD6nmuazlvskzUgvtsYCmn9Zyk3xoQ9nvF1nJCLgUZYUgUMPOwGybhxcQ5pwbIBh89awyzjAhXwjVTItF7jZg==
-
-serverless-plugin-warmup@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/serverless-plugin-warmup/-/serverless-plugin-warmup-8.0.0.tgz#317eeeaff5f1164c7fca33c4b9029940fbe49a1e"
-  integrity sha512-XRfPQAyOrLxcW7n9HhN+TvriJ3nYPKIrID8Eh00GOhXfApR1Ywf3R+slIDe/HthlBY3V1IxNF4DFwcZPXjIlPg==
+serverless-ssm-fetch@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/serverless-ssm-fetch/-/serverless-ssm-fetch-2.0.0.tgz#e7ed9f65cb283419b0d3072811576f9357faa544"
+  integrity sha512-GnBU+zZ3ZnB96+FgPH36tf3HODKRSGGaksx9mkEhsgP1JfVUmxwtRsZoCjdYy0VDm34ZnXxq3VcdCWy3+9HmxQ==
+  dependencies:
+    aws-sdk "^2.1046.0"
+    bluebird "^3.7.2"
 
 serverless@3.22.0:
   version "3.22.0"

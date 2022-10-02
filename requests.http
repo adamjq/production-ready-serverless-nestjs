@@ -1,5 +1,5 @@
 @local_base_url=http://localhost:3001
-@dev_aws_url=<DEV_API_URL>
+@dev_aws_url=AWS_APIGATEWAY_URL
 
 ########### DOCKER COMPOSE ###########
 
@@ -9,8 +9,9 @@ GET  {{local_base_url}}/health
 ### GraphQL query request
 POST {{local_base_url}}/graphql
 Content-Type: application/json
+X-Request-Type: GraphQL
 
-{"query":"query {\n users {\n id,\n role,}\n}","variables":{}}
+<@ ./graphql.examples/users.query.graphql
 
 ########### SERVERLESS OFFLINE ###########
 
@@ -21,3 +22,10 @@ GET {{local_base_url}}/dev/health
 
 GET {{dev_aws_url}}/health
 Content-Type: application/json
+
+### GraphQL query request
+POST {{dev_aws_url}}/graphql
+Content-Type: application/json
+X-Request-Type: GraphQL
+
+<@ ./graphql.examples/users.query.graphql

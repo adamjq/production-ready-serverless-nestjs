@@ -1,24 +1,11 @@
 version: "3.9"
 
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    restart: always
+  crdb:
+    image: cockroachdb/cockroach:v22.1.5
     ports:
-      - 3001:3001
-      - 9229:9229
+      - 26257:26257
+      - 8080:8080
+    command: start-single-node --insecure
     volumes:
-      - .:/app
-  
-  # runs 'sls offline' in Docker
-  slsoffline:
-    build:
-      context: .
-      dockerfile: Dockerfile.slsoffline
-    ports:
-      - 3001:3001
-      - 3002:3002
-    volumes:
-      - .:/app
+     - "${PWD}/cockroach-data/crdb:/cockroach/cockroach-data"
