@@ -23,7 +23,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "DEBUG=testcontainers node --experimental-vm-modules $(yarn bin jest) --config ./test/jest-e2e.json"
+    "test:e2e": "DEBUG=testcontainers jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
     "@nestjs/apollo": "10.1.3",
