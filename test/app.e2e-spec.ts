@@ -2,6 +2,7 @@ process.env.DATABASE_URL = 'postgresql://root@localhost:26257/defaultdb';
 
 import request from 'supertest';
 import path from 'path';
+import spawn from 'await-spawn';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { DockerComposeEnvironment, Wait } from 'testcontainers';
@@ -23,6 +24,11 @@ describe('Users (e2e)', () => {
     )
       .withWaitStrategy('crdb', Wait.forLogMessage('Container crdb-1 is ready'))
       .up(['crdb']);
+
+    // run prisma migrations against docker
+    console.log('Running prisma migrate...');
+    const prismaOutput = await spawn('prisma', ['migrate', 'deploy']);
+    console.log(`${prismaOutput}`);
   });
 
   beforeEach(() => {
