@@ -26,11 +26,12 @@ async function bootstrap() {
 }
 
 export const handler = async (event: any, context: Context, callback: any) => {
+  const server = await bootstrap();
+
   if (event.source === 'serverless-plugin-warmup') {
-    console.log('WarmUp - Lambda is warm!');
-    return 'Lambda is warm!';
+    console.log('WarmUp - Lambda warmed!');
+    return {};
   }
 
-  const server = await bootstrap();
   return server(event, context, callback);
 };
