@@ -21,6 +21,7 @@ custom:
 provider:
   name: aws
   runtime: nodejs16.x
+  architecture: arm64
   memorySize: 1024
   timeout: 15
   region: us-east-1
