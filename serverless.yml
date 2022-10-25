@@ -21,6 +21,7 @@ custom:
 provider:
   name: aws
   runtime: nodejs16.x
+  architecture: arm64
   memorySize: 1024
   timeout: 15
   region: us-east-1
@@ -44,6 +45,6 @@ functions:
       # see https://github.com/serverless/serverless-plugin-typescript/issues/170#issuecomment-1132731263
       patterns:
         - '!node_modules/.prisma/client/libquery_engine-*'
-        - 'node_modules/.prisma/client/libquery_engine-rhel-*'
+        - 'node_modules/.prisma/client/libquery_engine-linux-arm64-*'
         - '!node_modules/prisma/libquery_engine-*'
         - '!node_modules/@prisma/engines/**'
