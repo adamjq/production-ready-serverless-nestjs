@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
+      - run: npx prisma generate
       - run: yarn lint
       - run: yarn test
       - run: yarn prebuild
