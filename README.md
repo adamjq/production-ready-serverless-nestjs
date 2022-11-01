@@ -122,6 +122,8 @@ npx prisma migrate dev
 npx prisma migrate reset
 ```
 
+Note - an ERD diagram for the database schema will be generated under `/docs` - [see diagram](./docs/README.md).
+
 ### Production Database Migrations
 
 Production database migrations should be run in a CI/CD pipeline but can also be run locally with:
