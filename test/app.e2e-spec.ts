@@ -7,10 +7,12 @@ import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { DockerComposeEnvironment, Wait } from 'testcontainers';
 import { AppModule } from '../src/app.module';
+import { UserService } from '../src/user/user.service';
 import HealthcheckOkResponse from './fixtures/HealthcheckOkResponse.json';
 
 describe('Users (e2e)', () => {
   let environment;
+  let userService: UserService;
   let app: INestApplication;
 
   beforeAll(async () => {
@@ -39,6 +41,8 @@ describe('Users (e2e)', () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: [AppModule],
     }).compile();
+
+    userService = await module.get(UserService);
 
     app = await module
       .createNestApplication()
@@ -69,6 +73,17 @@ describe('Users (e2e)', () => {
       .get('/health')
       .expect(200)
       .expect(HealthcheckOkResponse);
+  });
+
+  it('test user service create', async () => {
+    let results = await userService.findAll();
+    expect(results.length).toEqual(0);
+
+    const mockEmail = 'mock@gmail.com';
+    await userService.create(mockEmail);
+
+    results = await userService.findAll();
+    expect(results.length).toEqual(1);
   });
 
   afterAll(async () => {
