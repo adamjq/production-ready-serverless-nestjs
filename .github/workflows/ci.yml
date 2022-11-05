@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  backend-ci:
+  ci:
     name: Backend CI
     runs-on: ubuntu-latest
     steps:
@@ -21,6 +21,19 @@ jobs:
       - run: yarn test
       - run: yarn prebuild
       - run: yarn build
+
+  test-e2e:
+    name: E2E Tests
+    runs-on: ubuntu-latest
+    needs:
+      - ci
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: yarn install
+      - run: yarn test:e2e
 
   # prisma-migrate:
   #   name: Prisma Migrate
