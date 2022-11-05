@@ -1732,11 +1732,7 @@
     "@types/node" "*"
     "@types/ssh2" "*"
 
-<<<<<<< HEAD
-"@types/dockerode@^3.3.8":
-=======
 "@types/dockerode@^3.3.12":
->>>>>>> 1a74b51 (Add user service integration tests)
   version "3.3.12"
   resolved "https://registry.yarnpkg.com/@types/dockerode/-/dockerode-3.3.12.tgz#ab2daaffbdabb788ce1add404cc4de0dcc71fe9c"
   integrity sha512-9dCtVq6Nr4XkkJmjyiDYOfZWVQ8MpJ35RZNawJYFLjd1VuaFLboDoIcyar23BkpMLeYzp6+vT8Vp3GHjhhlY+w==
@@ -7822,17 +7818,10 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-<<<<<<< HEAD
-testcontainers@^8.12.0:
-  version "8.16.0"
-  resolved "https://registry.yarnpkg.com/testcontainers/-/testcontainers-8.16.0.tgz#bf8a814179934d0e271aeaf8aec7a7dc3648baff"
-  integrity sha512-4wVmnzj4mAVXSQ8kU4uyNiXPs5W8UHdwCRbUuyeOSSODcgmDGQ8Te/YOYuF12HnxyzABEm1nR2I0ZCsQw/GZ/Q==
-=======
 testcontainers@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/testcontainers/-/testcontainers-9.0.0.tgz#af9a820cdc84ff8b10fc90aec9b1628a738486e0"
   integrity sha512-vEqJBm7eQino4VqayXjLsN1oXR8kN3jy1jxOdbQ2FA9UsTWoDCJU61wH+v60i3CaJ2bF1PlftHNzuOprD8B68Q==
->>>>>>> 1a74b51 (Add user service integration tests)
   dependencies:
     "@balena/dockerignore" "^1.0.2"
     "@types/archiver" "^5.3.1"
