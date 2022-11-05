@@ -22,4 +22,22 @@ export class UserService {
       data: user,
     });
   }
+
+  async delete(userId: number) {
+    this.logger.log(`Deleting User ${userId}`);
+    await this.prismaService.user.delete({
+      where: {
+        id: userId,
+      },
+    });
+  }
+
+  async deleteByEmail(email: string) {
+    this.logger.log(`Deleting User ${email}`);
+    await this.prismaService.user.delete({
+      where: {
+        email,
+      },
+    });
+  }
 }

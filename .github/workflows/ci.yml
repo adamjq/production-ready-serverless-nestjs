@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  backend-ci:
+  ci:
     name: Backend CI
     runs-on: ubuntu-latest
     steps:

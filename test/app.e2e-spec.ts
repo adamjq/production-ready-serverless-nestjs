@@ -60,12 +60,7 @@ describe('Users (e2e)', () => {
                   }
                 }`,
       })
-      .expect(200)
-      .expect({
-        data: {
-          users: [],
-        },
-      });
+      .expect(200);
   });
 
   it('test healthcheck success', async () => {
@@ -76,14 +71,17 @@ describe('Users (e2e)', () => {
   });
 
   it('test user service create', async () => {
+    const mockEmail = 'mock-e2etest@gmail.com';
+
     let results = await userService.findAll();
     expect(results.length).toEqual(0);
 
-    const mockEmail = 'mock@gmail.com';
     await userService.create(mockEmail);
 
     results = await userService.findAll();
     expect(results.length).toEqual(1);
+
+    await userService.deleteByEmail(mockEmail);
   });
 
   afterAll(async () => {
