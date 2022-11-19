@@ -33,7 +33,7 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 
 ### AWS Lambda
 - Pay-per-use pricing is ideal for early-stage startups where traffic and access patterns are unknown
-- Costs starts can be minimized by keeping package bundles small, caching server between invocations and keeping lambdas warm
+- Cold starts can be minimized by keeping package bundles small, caching server between invocations and keeping lambdas warm
 
 ### Serverless framework
 - Strong community of plugins and supports for NodeJS/Typescript
