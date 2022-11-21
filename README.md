@@ -70,15 +70,17 @@ This project contains a backend starter template for running NestJS GraphQL APIs
     yarn install
     ```
 
-4. Run database migrations locally in a separate terminal if it's a first time setup with `yarn prisma migrate dev`
+4. Run database migrations locally in a separate terminal if it's a first time setup with `npx prisma migrate dev`
 
-5. Start the NestJS server in a separate terminal:
+5. Seed the database with `npx prisma db seed`
+
+6. Start the NestJS server in a separate terminal:
     ```
     nvm use 16
     yarn start
     ```
 
-6. Call the endpoints in [requests.http](./requests.http) to test the API.
+7. Call the endpoints in [requests.http](./requests.http) to test the API.
 
 ### AWS Deployment
 

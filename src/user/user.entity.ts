@@ -3,8 +3,8 @@ import { MinLength } from 'class-validator';
 import 'reflect-metadata';
 
 export enum UserRole {
-  USER,
-  ADMIN,
+  USER = 'USER',
+  ADMIN = 'ADMIN',
 }
 
 @ObjectType()
