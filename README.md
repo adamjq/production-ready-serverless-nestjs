@@ -24,7 +24,7 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 
 ### NestJS
 - Opinionated, mature backend framework with active community
-- Supports dependency injections out of the box
+- Supports dependency injection out of the box
 - First-class typescript support
 
 ### GraphQL
