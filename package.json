@@ -35,7 +35,7 @@
     "@nestjs/terminus": "9.1.1",
     "@prisma/client": "4.11.0",
     "@vendia/serverless-express": "4.10.1",
-    "apollo-server-core": "3.10.3",
+    "apollo-server-core": "3.11.0",
     "apollo-server-express": "3.10.3",
     "aws-lambda": "1.0.7",
     "aws-serverless-express": "3.4.0",
