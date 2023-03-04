@@ -38,6 +38,3 @@ lerna-debug.log*
 
 .build/
 .serverless/
-
-# Cockroach DB
-cockroach-data

@@ -7,7 +7,7 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![CockroachLabs](https://img.shields.io/badge/Cockroach%20Labs-6933FF?style=for-the-badge&logo=Cockroach%20Labs&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ## Features
 - GraphQL configuration (Code-first approach)
@@ -42,10 +42,8 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 - ORM with great developer experience
 - Excellent Typescript support
 
-### CockroachDB
-- Postgres-compatible, distributed SQL database
-- Hosted [CockroachDB Serverless](https://www.cockroachlabs.com/lp/serverless/) solution has generous free-tier 
-- CockroachDB can easily be replaced with a regular PostgreSQL database with minimal changes
+### Supabase
+- Hosted serverless Postgres database
 
 ## Dependencies
 
@@ -62,36 +60,28 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 
 1. Create a `.env` file using [.env.example](./.env.example) as an example
 
-2. Launch the CockroachDB database with Docker with `docker-compose up`
+2. `yarn install`
 
-3. Install dependencies with:
-    ```
-    nvm use 16
-    yarn install
-    ```
+3. Launch Supabase in Docker with `npx supabase start`
 
 4. Run database migrations locally in a separate terminal if it's a first time setup with `npx prisma migrate dev`
 
 5. Seed the database with `npx prisma db seed`
 
-6. Start the NestJS server in a separate terminal:
-    ```
-    nvm use 16
-    yarn start
-    ```
+6. Start the NestJS server with `yarn start`
 
 7. Call the endpoints in [requests.http](./requests.http) to test the API.
 
 ### AWS Deployment
 
-**Note** - create all AWS and CockroachDB resources in the `us-east-1` AWS region.
+**Note** - create all AWS and Supabase resources in the `us-east-1` AWS region.
 
 1. Setup your AWS Credentials for deployments
 
-2. Create a [free-tier Cockroach DB Serverless cluster](https://www.cockroachlabs.com/lp/serverless/). Note down the connection string URL during cluster creation.
+2. Create [a free-tier Supabase database](https://supabase.com/).
 
 3. Create an AWS SSM Parameter in the AWS console named `/dev/database/url` with the secure string type
-and save the Cockroach DB connection string.
+and save the DB connection string.
 
     Confirm it exists with:
     ```
@@ -141,7 +131,7 @@ See [the Prisma docs](https://www.prisma.io/docs/concepts/components/prisma-migr
 - [Serverless Framework](https://www.serverless.com/framework/docs)
 - [NestJS](https://docs.nestjs.com/)
 - [Prisma](https://www.prisma.io/docs/)
-- [CockroachDB](https://www.cockroachlabs.com/)
+- [Supabase](https://supabase.com/)
 - [GraphQL](https://graphql.org/)
 
 ## Suggested SaaS integrations

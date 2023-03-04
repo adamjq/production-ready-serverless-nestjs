@@ -1,5 +1,5 @@
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   binaryTargets = ["native", "linux-arm64-openssl-1.0.x"]
 }
 
@@ -9,12 +9,15 @@ generator client {
 // }
 
 datasource db {
-  provider = "cockroachdb"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model User {
-  id      Int   @id @default(sequence())
-  email   String   @unique
-  role    String   
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
