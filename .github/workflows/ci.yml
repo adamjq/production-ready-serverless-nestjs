@@ -21,9 +21,7 @@ jobs:
       - run: yarn test
       - run: yarn prebuild
       - run: yarn build
-      - run: npx supabase start && npx prisma migrate dev
-        env:
-          DATABASE_URL: postgresql://postgres:postgres@localhost:54322/postgres
+      - run: yarn test:e2e
 
   # prisma-migrate:
   #   name: Prisma Migrate

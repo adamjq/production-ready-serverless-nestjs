@@ -72,6 +72,12 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 
 7. Call the endpoints in [requests.http](./requests.http) to test the API.
 
+### Integration tests
+
+```
+yarn test:e2e
+```
+
 ### AWS Deployment
 
 **Note** - create all AWS and Supabase resources in the `us-east-1` AWS region.
