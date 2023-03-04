@@ -1,7 +1,7 @@
 @local_base_url=http://localhost:3001
 @dev_aws_url=AWS_APIGATEWAY_URL
 
-########### DOCKER COMPOSE ###########
+########### LOCAL ###########
 
 ### Healthcheck
 GET  {{local_base_url}}/health

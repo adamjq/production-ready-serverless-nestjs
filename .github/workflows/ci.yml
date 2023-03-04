@@ -7,8 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  backend-ci:
-    name: Backend CI
+  ci:
+    name: CI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,16 +16,19 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
-      - run: npx prisma generate
+      - run: yarn prisma:generate
       - run: yarn lint
       - run: yarn test
       - run: yarn prebuild
       - run: yarn build
+      - run: npx supabase start && npx prisma migrate dev
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:54322/postgres
 
   # prisma-migrate:
   #   name: Prisma Migrate
   #   needs:
-  #     - backend-ci
+  #     - ci
   #   runs-on: ubuntu-latest
   #   steps:
   #     - uses: actions/checkout@v2
