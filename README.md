@@ -14,7 +14,7 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 - Prisma Database config with migrations
 - Docker database for local development
 - AWS Deployment with [Serverless Framework](https://www.serverless.com/)
-- AWS Lambda NodeJS 16x configuration and optimizations
+- AWS Lambda NodeJS 18x configuration and optimizations
 - GitHub actions for CI/CD
 
 ### Not included
@@ -96,7 +96,7 @@ and save the DB connection string.
 
 4. Install dependencies:
     ```
-    nvm use 16
+    nvm use 18
     yarn install
     ```
 
