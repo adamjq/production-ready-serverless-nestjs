@@ -2188,14 +2188,14 @@
     mermaid "^8.9.0"
     puppeteer "^13.0.0"
 
-"@nestjs/apollo@10.1.3":
-  version "10.1.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/apollo/-/apollo-10.1.3.tgz#c5f02a032b29b2e55472f09f5a474628ee507695"
-  integrity sha512-N0qm8R9KOJfOyIKu5U345uEdeO8n/8NOqKr1sJGUaiYn11PAIyg6159wO4Q4lhgJTqCV7QhRQ49sHzVHbjrtiA==
+"@nestjs/apollo@10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/apollo/-/apollo-10.2.0.tgz#c2cb1c0a086d46c044bc94739caeb6e8f1a880f7"
+  integrity sha512-ZIPu6t4JIhkRMa1Fpo2Et4p8eOQ3ci/hi0wNkvLCqykCYOyUvgNF5mPnim3LHLszK8WUvnaga/Rw73sDTwFJmw==
   dependencies:
     iterall "1.3.0"
     lodash.omit "4.5.0"
-    tslib "2.4.0"
+    tslib "2.5.0"
 
 "@nestjs/cli@9.1.3":
   version "9.1.3"
