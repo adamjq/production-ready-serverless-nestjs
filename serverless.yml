@@ -2,21 +2,28 @@ service: Production-Ready-Serverless-NestJS
 frameworkVersion: '>=3'
 
 plugins:
-  - serverless-plugin-typescript
   - serverless-ssm-fetch
   - serverless-offline
 
 package:
-  individually: true
-  patterns:
-    - "**/*.gql"
-    - '!dist/**'
+  exclude:
+    - './**'
+  include:
+    - 'dist/**' # only package the webpack 'dist' folder
 
 custom:
   serverlessSsmFetch:
     DATABASE_URL: '/dev/database/url~true'
   serverless-offline:
     httpPort: 3001
+    location: . # this is important to make serverless-offline use the current directory
+    functions:
+      main:
+        handler: local.handler # use the local entry point for serverless-offline
+  webpack:
+    includeModules: true
+    packager: 'yarn'
+    excludeFiles: test/**/
 
 provider:
   name: aws
@@ -29,7 +36,7 @@ provider:
 
 functions:
   main:
-    handler: src/lambda.handler
+    handler: dist/main.handler # the output of webpack. requires 'yarn build'
     environment:
       NODE_ENV: production
       # https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/node-reusing-connections.html
@@ -41,10 +48,3 @@ functions:
       - http:
           method: ANY
           path: '{proxy+}'
-    package:
-      # see https://github.com/serverless/serverless-plugin-typescript/issues/170#issuecomment-1132731263
-      patterns:
-        - '!node_modules/.prisma/client/libquery_engine-*'
-        - 'node_modules/.prisma/client/libquery_engine-linux-arm64-*'
-        - '!node_modules/prisma/libquery_engine-*'
-        - '!node_modules/@prisma/engines/**'

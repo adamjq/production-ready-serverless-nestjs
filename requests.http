@@ -1,5 +1,5 @@
 @local_base_url=http://localhost:3001
-@dev_aws_url=AWS_APIGATEWAY_URL
+@dev_aws_url=<dev_aws_url>
 
 ########### LOCAL ###########
 
@@ -17,6 +17,13 @@ X-Request-Type: GraphQL
 
 ### Healthcheck
 GET {{local_base_url}}/dev/health
+
+### GraphQL query request
+POST http://localhost:3002/dev/graphql
+Content-Type: application/json
+X-Request-Type: GraphQL
+
+<@ ./graphql.examples/users.query.graphql
 
 ########### AWS ###########
 

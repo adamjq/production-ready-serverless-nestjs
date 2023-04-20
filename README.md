@@ -78,6 +78,22 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 yarn test:e2e
 ```
 
+### Webpack bundling
+
+```shell
+yarn build # with webpack
+
+# run binary locally
+node dist/main.js
+```
+
+### Serverless Offline
+
+Test AWS Lambda packaging and run locally with:
+```
+npx serverless offline
+```
+
 ### AWS Deployment
 
 **Note** - create all AWS and Supabase resources in the `us-east-1` AWS region.
