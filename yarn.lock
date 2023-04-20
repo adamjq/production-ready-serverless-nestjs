@@ -2277,12 +2277,12 @@
     boxen "5.1.2"
     check-disk-space "3.3.1"
 
-"@nestjs/testing@9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npmjs.org/@nestjs/testing/-/testing-9.1.1.tgz"
-  integrity sha512-ijphiRhJ9kTaE4cxQSrMU053pIb5uKbGUWcLnBEJ0pCa3qCPosBV/TKMt3YlL5KuOKydDRaHW04pCtXAY5Avyw==
+"@nestjs/testing@9.4.0":
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.4.0.tgz#1e5d1e799413e996c9c2da02a89dfefa62c3b70e"
+  integrity sha512-xZWp363P4otcebg++gSjUcdCfTK0RorORzyFq3aLaSAQOlq8kxfFDRIKzEATR4aOUfqTMMsAA8lhnMJWf35N6A==
   dependencies:
-    tslib "2.4.0"
+    tslib "2.5.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
