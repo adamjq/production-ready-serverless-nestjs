@@ -3,10 +3,10 @@ generator client {
   binaryTargets = ["native", "linux-arm64-openssl-1.0.x"]
 }
 
-generator erd {
-  provider = "prisma-erd-generator"
-  output = "../docs/ERD.svg"
-}
+// generator erd {
+//   provider = "prisma-erd-generator"
+//   output = "../docs/ERD.svg"
+// }
 
 datasource db {
   provider = "postgresql"

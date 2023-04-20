@@ -9,20 +9,39 @@ export class GqlConfigService implements GqlOptionsFactory {
 
   createGqlOptions(): ApolloDriverConfig {
     return {
-      autoSchemaFile: isLocalDev()
-        ? join(process.cwd(), 'src/schema.gql')
+      autoSchemaFile: this.isLocalDev()
+        ? join(process.cwd(), this.getGraphQLSchemaPath())
         : false, // only auto-generate schema in dev
       buildSchemaOptions: { dateScalarMode: 'timestamp' },
-      debug: isLocalDev(),
-      playground: isLocalDev(),
-      sortSchema: isLocalDev(),
-      introspection: isLocalDev(),
-      typePaths: !isLocalDev() ? ['src/schema.gql'] : [], // use generated graphql schema in prod
-      cors: true, // TODO: { origin: FE_URL!, credentials: true} for production?
+      playground: this.isLocalDev(),
+      sortSchema: this.isLocalDev(),
+      introspection: this.isLocalDev(),
+      typePaths: !this.isLocalDev()
+        ? [join(__dirname, this.getGraphQLSchemaPath())]
+        : [], // use generated graphql schema in prod
+      // cors: true, // TODO: { origin: FE_URL!, credentials: true} for production?
+      persistedQueries: false,
     };
   }
-}
 
-const isLocalDev = (): boolean => {
-  return process.env.NODE_ENV !== 'production';
-};
+  getGraphQLSchemaPath(): string {
+    const schemaPath = this.isRunningInLambda()
+      ? 'schema.gql'
+      : 'src/schema.gql';
+    return schemaPath;
+  }
+
+  isLocalDev(): boolean {
+    return process.env.NODE_ENV !== 'production';
+  }
+
+  isRunningInLambda(): boolean {
+    const runningInLambda =
+      process.env.AWS_LAMBDA_FUNCTION_NAME &&
+      process.env.AWS_LAMBDA_FUNCTION_NAME != '';
+    if (runningInLambda) {
+      this.logger.debug('Service is Running in AWS lambda');
+    }
+    return runningInLambda;
+  }
+}
