@@ -60,17 +60,19 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 
 1. Create a `.env` file using [.env.example](./.env.example) as an example
 
-2. `yarn install`
+2. `nvm use`
 
-3. Launch Supabase in Docker with `npx supabase start`
+3. `yarn install`
 
-4. Run database migrations locally in a separate terminal if it's a first time setup with `npx prisma migrate dev`
+4. Launch Supabase in Docker with `npx supabase start`
 
-5. Seed the database with `npx prisma db seed`
+5. Run database migrations locally in a separate terminal if it's a first time setup with `npx prisma migrate dev`
 
-6. Start the NestJS server with `yarn start`
+6. Seed the database with `npx prisma db seed`
 
-7. Call the endpoints in [requests.http](./requests.http) to test the API.
+7. Start the NestJS server with `yarn start`
+
+8. Call the endpoints in [requests.http](./requests.http) to test the API.
 
 ### Integration tests
 
