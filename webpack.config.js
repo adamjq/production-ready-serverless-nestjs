@@ -38,6 +38,10 @@ module.exports = (options, webpack) => {
                     test: /\.d\.ts$/,
                     loader: 'ignore-loader',
                 },
+                {
+                    test: /\.js\.map$/,
+                    loader: 'ignore-loader',
+                },
             ],
         },
         plugins: [
