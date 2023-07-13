@@ -1,5 +1,5 @@
 @local_base_url=http://localhost:3001
-@dev_aws_url=https://vzm8p7jhlj.execute-api.us-east-1.amazonaws.com/dev/
+@dev_aws_url=""
 
 ########### LOCAL ###########
 

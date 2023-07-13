@@ -70,7 +70,7 @@ This project contains a backend starter template for running NestJS GraphQL APIs
 
 6. Seed the database with `npx prisma db seed`
 
-7. Start the NestJS server with `yarn start`
+7. Start the NestJS server with `yarn start:dev`
 
 8. Call the endpoints in [requests.http](./requests.http) to test the API.
 
