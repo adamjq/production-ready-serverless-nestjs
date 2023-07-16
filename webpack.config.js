@@ -67,11 +67,11 @@ module.exports = (options, webpack) => {
                     {
                         context: path.resolve(__dirname, 'node_modules/.prisma/client'),
                         from: 'libquery_engine-linux-arm64-*',
-                        to: path.resolve(__dirname, 'dist/node_modules/.prisma/client'),
+                        to: path.resolve(__dirname, 'dist'),
                     },
                     {
                         from: path.resolve(__dirname, 'prisma/schema.prisma'),
-                        to: path.resolve(__dirname, 'dist/node_modules/.prisma/client'),
+                        to: path.resolve(__dirname, 'dist/schema.prisma'),
                     },
                 ],
             }),
