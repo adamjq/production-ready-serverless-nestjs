@@ -34,13 +34,35 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/schematics-cli@16.1.0":
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics-cli/-/schematics-cli-16.1.0.tgz#060714d8c9b8ed2787a4fe16f763163348840a34"
-  integrity sha512-siBpRDmMMV7NB+NvaDHeJ4doHoSkFwIywwFj8GXnBCtobyxrBl1EyG1cKK+FHRydYtyYIk8FEoOpJA9oE9S2hg==
+"@angular-devkit/core@16.1.8":
+  version "16.1.8"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-16.1.8.tgz#f54bf179a78c6ea83ccd46687c54766d3ba674c9"
+  integrity sha512-dSRD/+bGanArIXkj+kaU1kDFleZeQMzmBiOXX+pK0Ah9/0Yn1VmY3RZh1zcX9vgIQXV+t7UPrTpOjaERMUtVGw==
   dependencies:
-    "@angular-devkit/core" "16.1.0"
-    "@angular-devkit/schematics" "16.1.0"
+    ajv "8.12.0"
+    ajv-formats "2.1.1"
+    jsonc-parser "3.2.0"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
+"@angular-devkit/core@16.2.0":
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-16.2.0.tgz#477c6f9006d9efa4ff54c8f7a8a391df70788602"
+  integrity sha512-l1k6Rqm3YM16BEn3CWyQKrk9xfu+2ux7Bw3oS+h1TO4/RoxO2PgHj8LLRh/WNrYVarhaqO7QZ5ePBkXNMkzJ1g==
+  dependencies:
+    ajv "8.12.0"
+    ajv-formats "2.1.1"
+    jsonc-parser "3.2.0"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
+"@angular-devkit/schematics-cli@16.2.0":
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics-cli/-/schematics-cli-16.2.0.tgz#d2e93d498785fcfcc7b5ff173fc92f020bd12007"
+  integrity sha512-f3HjrDvSrRMvESogLsqsZXsEg//trIBySCHRXCglPrWLVdBbIRctGOhXqZoclRxXimIKUx14zLsOWzDwZG8+HQ==
+  dependencies:
+    "@angular-devkit/core" "16.2.0"
+    "@angular-devkit/schematics" "16.2.0"
     ansi-colors "4.1.3"
     inquirer "8.2.4"
     symbol-observable "4.0.0"
@@ -54,6 +76,28 @@
     "@angular-devkit/core" "16.1.0"
     jsonc-parser "3.2.0"
     magic-string "0.30.0"
+    ora "5.4.1"
+    rxjs "7.8.1"
+
+"@angular-devkit/schematics@16.1.8":
+  version "16.1.8"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-16.1.8.tgz#ab392d3a71bd50dcde25f9fbcee7e67d3965565d"
+  integrity sha512-6LyzMdFJs337RTxxkI2U1Ndw0CW5mMX/aXWl8d7cW2odiSrAg8IdlMqpc+AM8+CPfsB0FtS1aWkEZqJLT0jHOg==
+  dependencies:
+    "@angular-devkit/core" "16.1.8"
+    jsonc-parser "3.2.0"
+    magic-string "0.30.0"
+    ora "5.4.1"
+    rxjs "7.8.1"
+
+"@angular-devkit/schematics@16.2.0":
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-16.2.0.tgz#4de900615451fce61cf5bcbc7935986ad89e49f5"
+  integrity sha512-QMDJXPE0+YQJ9Ap3MMzb0v7rx6ZbBEokmHgpdIjN3eILYmbAdsSGE8HTV8NjS9nKmcyE9OGzFCMb7PFrDTlTAw==
+  dependencies:
+    "@angular-devkit/core" "16.2.0"
+    jsonc-parser "3.2.0"
+    magic-string "0.30.1"
     ora "5.4.1"
     rxjs "7.8.1"
 
@@ -2082,7 +2126,7 @@
   resolved "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz"
   integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
 
-"@jridgewell/sourcemap-codec@^1.4.13":
+"@jridgewell/sourcemap-codec@^1.4.13", "@jridgewell/sourcemap-codec@^1.4.15":
   version "1.4.15"
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
   integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
@@ -2130,31 +2174,31 @@
     mermaid "^8.9.0"
     puppeteer "^13.0.0"
 
-"@nestjs/apollo@12.0.1":
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/apollo/-/apollo-12.0.1.tgz#cd4442b0554cdb63c359bb63207d043adae28fde"
-  integrity sha512-qThl0gK3nFGohWh72FADM69JI6cW7tNDeox8zJpLtzxb8zCTncq5NOJpGjF8wlEyMgXnq7bdQw6aWmbWeSEgpw==
+"@nestjs/apollo@12.0.7":
+  version "12.0.7"
+  resolved "https://registry.yarnpkg.com/@nestjs/apollo/-/apollo-12.0.7.tgz#c0fe75111f9c6ce3434d4ce009165a29518139ae"
+  integrity sha512-snY8uM/ypE5TZOVChIIuNlTFWGCrwJ8U/xq3EFYE6A+dIqY7/B9sou79snevCm3zTde69KdsOYg5FBmznasxNg==
   dependencies:
     "@apollo/server-plugin-landing-page-graphql-playground" "4.0.0"
     iterall "1.3.0"
     lodash.omit "4.5.0"
-    tslib "2.5.3"
+    tslib "2.6.0"
 
-"@nestjs/cli@10.0.3":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-10.0.3.tgz#0eedf0934e443523254790e190268d44ec2124ad"
-  integrity sha512-mmcc8NmYdMVwOkXkK9FZofk+dXYWYAEBIP9AOnI5/+idhPLLkjBUFdT5iP55hTE3NZ6OUGIBrteBe5iJEqyqRw==
+"@nestjs/cli@10.1.15":
+  version "10.1.15"
+  resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-10.1.15.tgz#4f64b4ad84289c5ff6b095f34ac106adb36b7991"
+  integrity sha512-BYUAacihz0OE1nGeGrfpn9wvFffOVPtlVFanegmHdWip0kngqiZnwlb6nQL5047JRghuPnLTIBycgLQWoeI+jw==
   dependencies:
-    "@angular-devkit/core" "16.1.0"
-    "@angular-devkit/schematics" "16.1.0"
-    "@angular-devkit/schematics-cli" "16.1.0"
+    "@angular-devkit/core" "16.2.0"
+    "@angular-devkit/schematics" "16.2.0"
+    "@angular-devkit/schematics-cli" "16.2.0"
     "@nestjs/schematics" "^10.0.1"
     chalk "4.1.2"
     chokidar "3.5.3"
     cli-table3 "0.6.3"
     commander "4.1.1"
     fork-ts-checker-webpack-plugin "8.0.0"
-    inquirer "8.2.5"
+    inquirer "8.2.6"
     node-emoji "1.11.0"
     ora "5.4.1"
     os-name "4.0.1"
@@ -2163,19 +2207,19 @@
     source-map-support "0.5.21"
     tree-kill "1.2.2"
     tsconfig-paths "4.2.0"
-    tsconfig-paths-webpack-plugin "4.0.1"
-    typescript "5.1.3"
-    webpack "5.87.0"
+    tsconfig-paths-webpack-plugin "4.1.0"
+    typescript "5.1.6"
+    webpack "5.88.2"
     webpack-node-externals "3.0.0"
 
-"@nestjs/common@10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.0.2.tgz#8ecafc0c88d51579581f09898474d2431988d5aa"
-  integrity sha512-pws0Xtlt6olOleJiMH1/QxKYjV4eZbNMBvVrBraCmKMnrLG2HcVPlANuyPWOB18sz5s8u5/qCKJxuuP9uNIRqQ==
+"@nestjs/common@10.2.1":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.2.1.tgz#ec31de16d8594ec74e51cdd30190998c59324d1b"
+  integrity sha512-zo5OQbNmchV58SHw4vBCLIbsCrpZmNuW9W4m5BE1lB+9FW9ZiLQeZjIxzlL3bEKiI9cezRvDhct/53LPS8R4aA==
   dependencies:
     uid "2.0.2"
     iterare "1.2.1"
-    tslib "2.5.3"
+    tslib "2.6.1"
 
 "@nestjs/config@3.0.0":
   version "3.0.0"
@@ -2187,55 +2231,66 @@
     lodash "4.17.21"
     uuid "9.0.0"
 
-"@nestjs/core@10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.0.2.tgz#1aed727297417cfd03d6642c2d5e7b58ff57e780"
-  integrity sha512-Z84z7xJ5n6Noffl8brT7Z2tuW6pP46zWJk8NECSyon5iGQti+QemkE7lkx/MiCTe9oCB0L/S30UR8A2bAbOfDg==
+"@nestjs/core@10.2.1":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.2.1.tgz#ad369628eb220cc0bd7596e2a236ec020c11007a"
+  integrity sha512-oH1jmCrVUkBkbeiEzAaYZ5unddn5bW/Id15pPGblYeLGAmfjXW9+G5VCffoGpO1DxBZdZu5/qcXTYyCR6rgXTg==
   dependencies:
     uid "2.0.2"
     "@nuxtjs/opencollective" "0.3.2"
     fast-safe-stringify "2.1.1"
     iterare "1.2.1"
     path-to-regexp "3.2.0"
-    tslib "2.5.3"
+    tslib "2.6.1"
 
-"@nestjs/graphql@12.0.1":
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-12.0.1.tgz#bf56b61de5f1e086f4eb35e1812b2360e1b4fdc9"
-  integrity sha512-6/bnatLaizmCJuaWhR10ro7ieG3D2mKE5xUsf7yGMVeip8LN0lmPE/pdqHpXZLaIeIPGe3NajLvCUkW7PPtdBA==
+"@nestjs/graphql@12.0.8":
+  version "12.0.8"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-12.0.8.tgz#15143b76dfb5fa4dc880d68a1bf2f7159ea077b6"
+  integrity sha512-odYDHUdLOMCxjC5VSEmF/23r8cY40N1KCwBkWaCmI1IF76Ffe3srWRDv8HS9tcai9eSmOeSWuyLBEg2OSru0cQ==
   dependencies:
     "@graphql-tools/merge" "9.0.0"
     "@graphql-tools/schema" "10.0.0"
     "@graphql-tools/utils" "10.0.1"
-    "@nestjs/mapped-types" "2.0.0"
+    "@nestjs/mapped-types" "2.0.2"
     chokidar "3.5.3"
     fast-glob "3.2.12"
     graphql-tag "2.12.6"
-    graphql-ws "5.13.1"
+    graphql-ws "5.14.0"
     lodash "4.17.21"
     normalize-path "3.0.0"
     subscriptions-transport-ws "0.11.0"
-    tslib "2.5.3"
+    tslib "2.6.0"
     uuid "9.0.0"
     ws "8.13.0"
 
-"@nestjs/mapped-types@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-2.0.0.tgz#1d65f4c1a16af30080153e9c05b86e2f5d56cf65"
-  integrity sha512-JyIOY1OE4x2t8Z2ImWLQJnHVqLCBHJZXm6RqcOG3+4rIsqMQxm5smHbb7H5C6tLAdDcRYd/fG2gYK1J1GiqKLw==
+"@nestjs/mapped-types@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-2.0.2.tgz#c8a090a8d22145b85ed977414c158534210f2e4f"
+  integrity sha512-V0izw6tWs6fTp9+KiiPUbGHWALy563Frn8X6Bm87ANLRuE46iuBMD5acKBDP5lKL/75QFvrzSJT7HkCbB0jTpg==
 
-"@nestjs/platform-express@10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-10.0.2.tgz#5d813c4d469f55ebdf053f9953f064f55b534f8d"
-  integrity sha512-VfPkstVqdeLkIrc/U1vyAO2OebV+myPgxv4vgxdvSSf6rSOWwqmTaWA6zHjZA5CYCmNf5cTGVXugCwz8cvn5KA==
+"@nestjs/platform-express@10.2.1":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-10.2.1.tgz#8fd5c69bb43c3cbec33546a8212b388daaa550ef"
+  integrity sha512-QwujsYKeVAdyZAyS21fzIsOn5X+JpIm1ZJrdzj/4B8U5GmAm5NM6H3E2ZqvctEtSnhD9iKP4tGUj4Z8MiIFo5A==
   dependencies:
     body-parser "1.20.2"
     cors "2.8.5"
     express "4.18.2"
     multer "1.4.4-lts.1"
-    tslib "2.5.3"
+    tslib "2.6.1"
 
-"@nestjs/schematics@10.0.1", "@nestjs/schematics@^10.0.1":
+"@nestjs/schematics@10.0.2":
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/schematics/-/schematics-10.0.2.tgz#d782ac1a6e9372d2f7ede1e2077c3a7484714923"
+  integrity sha512-DaZZjymYoIfRqC5W62lnYXIIods1PDY6CGc8+IpRwyinzffjKxZ3DF3exu+mdyvllzkXo9DTXkoX4zOPSJHCkw==
+  dependencies:
+    "@angular-devkit/core" "16.1.8"
+    "@angular-devkit/schematics" "16.1.8"
+    comment-json "4.2.3"
+    jsonc-parser "3.2.0"
+    pluralize "8.0.0"
+
+"@nestjs/schematics@^10.0.1":
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/@nestjs/schematics/-/schematics-10.0.1.tgz#c44f763186de621ec8b3974891bbb27d3c6df04b"
   integrity sha512-buxpYtSwOmWyf0nUJWJCkCkYITwbOfIEKHTnGS7sDbcfaajrOFXb5pPAGD2E1CUb3C1+NkQIURPKzs0IouZTQg==
@@ -2254,12 +2309,12 @@
     boxen "5.1.2"
     check-disk-space "3.4.0"
 
-"@nestjs/testing@10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-10.0.2.tgz#7d38665c2e1e629d0f37bdfae2998aa68faf6669"
-  integrity sha512-Fjj5dGcAW0MSvZI3RzVhZtGU49ZOYysHyOx8spOXWeu2jDr4B+ChkAYJDuZSx9U0x/1ONp3RNZau6gWgG8UO9w==
+"@nestjs/testing@10.2.1":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-10.2.1.tgz#72e25203ea0327128ced9285f3c4a77d660f4ad6"
+  integrity sha512-NZp79hk5WigRkfraBwAIIEczzk+ionPSqpEr1qJxSXAF2HARtEDX8WqrHWe83k6Wff5d4S4D1ZRDtGp88/d8PQ==
   dependencies:
-    tslib "2.5.3"
+    tslib "2.6.1"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -6422,10 +6477,10 @@ graphql-tools@8.2.11:
   optionalDependencies:
     "@apollo/client" "~3.2.5 || ~3.3.0 || ~3.4.0 || ~3.5.0 || ~3.6.0"
 
-graphql-ws@5.13.1:
-  version "5.13.1"
-  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.13.1.tgz#96ac9963edb1e94c8e7f21af48ce5fcaab91779a"
-  integrity sha512-eiX7ES/ZQr0q7hSM5UBOEIFfaAUmAY9/CSDyAnsETuybByU7l/v46drRg9DQoTvVABEHp3QnrvwgTRMhqy7zxQ==
+graphql-ws@5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.14.0.tgz#766f249f3974fc2c48fae0d1fb20c2c4c79cd591"
+  integrity sha512-itrUTQZP/TgswR4GSSYuwWUzrE/w5GhbwM2GX3ic2U7aw33jgEsayfIlvaj7/GcIvZgNMzsPTrE5hqPuFUiE5g==
 
 graphql@16.6.0:
   version "16.6.0"
@@ -6641,7 +6696,28 @@ inquirer@8.2.4:
     through "^2.3.6"
     wrap-ansi "^7.0.0"
 
-inquirer@8.2.5, inquirer@^8.2.5:
+inquirer@8.2.6:
+  version "8.2.6"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.6.tgz#733b74888195d8d400a67ac332011b5fae5ea562"
+  integrity sha512-M1WuAmb7pn9zdFRtQYk26ZBoY043Sse0wVDdk4Bppr+JOXyQYybdtvK+l9wUibhtjdjvtoiNy8tk+EgsYIUqKg==
+  dependencies:
+    ansi-escapes "^4.2.1"
+    chalk "^4.1.1"
+    cli-cursor "^3.1.0"
+    cli-width "^3.0.0"
+    external-editor "^3.0.3"
+    figures "^3.0.0"
+    lodash "^4.17.21"
+    mute-stream "0.0.8"
+    ora "^5.4.1"
+    run-async "^2.4.0"
+    rxjs "^7.5.5"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+    through "^2.3.6"
+    wrap-ansi "^6.0.1"
+
+inquirer@^8.2.5:
   version "8.2.5"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.5.tgz#d8654a7542c35a9b9e069d27e2df4858784d54f8"
   integrity sha512-QAgPDQMEgrDssk1XiwwHoOGYF9BAbUcc1+j+FhEvaOt8/cKRqyLn0U5qA6F74fGhTMGxf92pOvPBeh29jQJDTQ==
@@ -7725,6 +7801,13 @@ magic-string@0.30.0:
   integrity sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
+
+magic-string@0.30.1:
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.1.tgz#ce5cd4b0a81a5d032bd69aab4522299b2166284d"
+  integrity sha512-mbVKXPmS0z0G4XqFDCTllmDQ6coZzn94aMlb0o/A4HEHJCKcanlDZwYJgwnkmgD3jyWhUgj9VsPrfd972yPffA==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.15"
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -9888,10 +9971,10 @@ ts-node@10.9.1:
     v8-compile-cache-lib "^3.0.1"
     yn "3.1.1"
 
-tsconfig-paths-webpack-plugin@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-4.0.1.tgz#a24651d0f69668a1abad38d3c2489855c257460d"
-  integrity sha512-m5//KzLoKmqu2MVix+dgLKq70MnFi8YL8sdzQZ6DblmCdfuq/y3OqvJd5vMndg2KEVCOeNz8Es4WVZhYInteLw==
+tsconfig-paths-webpack-plugin@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-4.1.0.tgz#3c6892c5e7319c146eee1e7302ed9e6f2be4f763"
+  integrity sha512-xWFISjviPydmtmgeUAuXp4N1fky+VCtfhOkDUFIv5ea7p4wuTomI4QTrXvFBX2S4jZsmyTSrStQl+E+4w+RzxA==
   dependencies:
     chalk "^4.1.0"
     enhanced-resolve "^5.7.0"
@@ -9915,10 +9998,15 @@ tsconfig-paths@4.2.0, tsconfig-paths@^4.1.2:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@2.5.3:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.5.3.tgz#24944ba2d990940e6e982c4bea147aba80209913"
-  integrity sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==
+tslib@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.0.tgz#b295854684dbda164e181d259a22cd779dcd7bc3"
+  integrity sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==
+
+tslib@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
+  integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==
 
 tslib@^1.11.1, tslib@^1.8.1:
   version "1.14.1"
@@ -10011,10 +10099,10 @@ typescript@4.8.4:
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.8.4.tgz"
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
 
-typescript@5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.3.tgz#8d84219244a6b40b6fb2b33cc1c062f715b9e826"
-  integrity sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==
+typescript@5.1.6:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
+  integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
 uid@2.0.2:
   version "2.0.2"
@@ -10242,6 +10330,36 @@ webpack@5.87.0:
     watchpack "^2.4.0"
     webpack-sources "^3.2.3"
 
+webpack@5.88.2:
+  version "5.88.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.88.2.tgz#f62b4b842f1c6ff580f3fcb2ed4f0b579f4c210e"
+  integrity sha512-JmcgNZ1iKj+aiR0OvTYtWQqJwq37Pf683dY9bVORwVbUrDhLhdn/PlO2sHsFHPkj7sHNQF3JwaAkp49V+Sq1tQ==
+  dependencies:
+    "@types/eslint-scope" "^3.7.3"
+    "@types/estree" "^1.0.0"
+    "@webassemblyjs/ast" "^1.11.5"
+    "@webassemblyjs/wasm-edit" "^1.11.5"
+    "@webassemblyjs/wasm-parser" "^1.11.5"
+    acorn "^8.7.1"
+    acorn-import-assertions "^1.9.0"
+    browserslist "^4.14.5"
+    chrome-trace-event "^1.0.2"
+    enhanced-resolve "^5.15.0"
+    es-module-lexer "^1.2.1"
+    eslint-scope "5.1.1"
+    events "^3.2.0"
+    glob-to-regexp "^0.4.1"
+    graceful-fs "^4.2.9"
+    json-parse-even-better-errors "^2.3.1"
+    loader-runner "^4.2.0"
+    mime-types "^2.1.27"
+    neo-async "^2.6.2"
+    schema-utils "^3.2.0"
+    tapable "^2.1.1"
+    terser-webpack-plugin "^5.3.7"
+    watchpack "^2.4.0"
+    webpack-sources "^3.2.3"
+
 webpack@^5:
   version "5.79.0"
   resolved "https://registry.npmjs.org/webpack/-/webpack-5.79.0.tgz"
@@ -10342,6 +10460,15 @@ windows-release@^4.0.0:
   integrity sha512-OxmV4wzDKB1x7AZaZgXMVsdJ1qER1ed83ZrTYd5Bwq2HfJVg3DJS8nqlAG4sMoJ7mu8cuRmLEYyU13BKwctRAg==
   dependencies:
     execa "^4.0.2"
+
+wrap-ansi@^6.0.1:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
+  integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
