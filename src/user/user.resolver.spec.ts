@@ -1,8 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UserResolver } from './user.resolver';
 import { UserService } from './user.service';
+import { User, UserRole } from './user.entity';
 
-const mockUsers = [];
+const mockUsers: User[] = [
+  {
+    id: '1',
+    email: 'test@gmail.com',
+    role: UserRole.USER
+  }
+];
 
 describe('UserResolver', () => {
   let resolver: UserResolver;
@@ -28,7 +35,7 @@ describe('UserResolver', () => {
   });
 
   it('should find users', async () => {
-    expect(await resolver.findAll()).toEqual([]);
+    expect(await resolver.findAll()).toEqual(mockUsers);
     expect(mockUserService.findAll).toHaveBeenCalledTimes(1);
   });
 });
