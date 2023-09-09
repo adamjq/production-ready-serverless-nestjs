@@ -9,8 +9,8 @@ export enum UserRole {
 
 @ObjectType()
 export class User {
-  @Field(() => Int)
-  id: number;
+  @Field()
+  id: string;
 
   @Field()
   @MinLength(3)
