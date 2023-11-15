@@ -87,7 +87,7 @@
     "supabase": "^1.50.9",
     "supertest": "6.2.4",
     "ts-jest": "29.1.1",
-    "ts-loader": "9.4.2",
+    "ts-loader": "9.5.1",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.1.0",
     "typescript": "4.8.4",
