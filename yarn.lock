@@ -2603,10 +2603,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/aws-lambda@8.10.108":
-  version "8.10.108"
-  resolved "https://registry.npmjs.org/@types/aws-lambda/-/aws-lambda-8.10.108.tgz"
-  integrity sha512-1yh1W1WoqK3lGHy+V/Fi55zobxrDHUUsluCWdMlOXkCvtsCmHPXOG+CQ2STIL4B1g6xi6I6XzxaF8V9+zeIFLA==
+"@types/aws-lambda@8.10.126":
+  version "8.10.126"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.126.tgz#be132de6e68353e240c88505940e67cd95d3066e"
+  integrity sha512-5eh4ffLdGYgGYI1Xr6W5L4IVse4RR7L2ns5OVUXA52nW5GFapIcGMcCzHAIMMOdpcQs3aGVxbvFlJNZH6IpgEQ==
 
 "@types/babel__core@^7.1.14":
   version "7.20.0"
