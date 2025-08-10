@@ -7639,7 +7639,7 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
 
-json5@^2.2.1, json5@^2.2.2, json5@^2.2.3:
+json5@^2.2.2, json5@^2.2.3:
   version "2.2.3"
   resolved "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
@@ -10129,15 +10129,6 @@ tsconfig-paths-webpack-plugin@4.1.0:
     chalk "^4.1.0"
     enhanced-resolve "^5.7.0"
     tsconfig-paths "^4.1.2"
-
-tsconfig-paths@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-4.1.0.tgz"
-  integrity sha512-AHx4Euop/dXFC+Vx589alFba8QItjF+8hf8LtmuiCwHyI4rHXQtOOENaM8kvYf5fR0dRChy3wzWIZ9WbB7FWow==
-  dependencies:
-    json5 "^2.2.1"
-    minimist "^1.2.6"
-    strip-bom "^3.0.0"
 
 tsconfig-paths@4.2.0, tsconfig-paths@^4.1.2:
   version "4.2.0"
