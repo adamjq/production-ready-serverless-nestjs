@@ -27,7 +27,7 @@
     "test:e2e": "npx supabase start && npx dotenv -e .env.e2e-test -- npx prisma migrate dev && npx dotenv -e .env.e2e-test -- jest --config ./test/jest-e2e.json"
   },
   "resolutions": {
-    "graphql": "16.6.0"
+    "graphql": "16.8.1"
   },
   "dependencies": {
     "@apollo/server": "^4.3.2",
@@ -50,7 +50,7 @@
     "class-validator": "0.14.0",
     "express": "^4.17.1",
     "fastify": "^4.4.0",
-    "graphql": "16.6.0",
+    "graphql": "16.8.1",
     "graphql-tools": "8.2.11",
     "http": "0.0.1-security",
     "reflect-metadata": "0.1.13",
