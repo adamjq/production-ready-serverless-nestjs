@@ -43,7 +43,7 @@
     "@prisma/client": "5",
     "@vendia/serverless-express": "4.10.4",
     "apollo-server-core": "3.11.0",
-    "apollo-server-express": "3.10.3",
+    "@apollo/server": "4.0.0",
     "aws-lambda": "1.0.7",
     "aws-serverless-express": "3.4.0",
     "class-transformer": "0.5.1",
